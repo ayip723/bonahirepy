@@ -1,11 +1,16 @@
 '''server/app.py - main api app declaration'''
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
+from sqlalch import db
+from models import User
+from users import users
 
 '''Main wrapper for app creation'''
 app = Flask(__name__, static_folder='../build')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2:///test1'
 CORS(app)
-
+db.init_app(app)
+app.register_blueprint(users, url_prefix='/users')
 ##
 # API routes
 ##
