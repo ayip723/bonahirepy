@@ -1,6 +1,6 @@
 # Flask React Boilerplate
 
-[![Build Status](https://travis-ci.org/YaleDHLab/flask-react-boilerplate.svg?branch=master)](https://travis-ci.org/YaleDHLab/flask-react-boilerplate)
+[![Build Status](https://travis-ci.com/ayip723/bonahirepy.svg?branch=master)](https://travis-ci.com/github/ayip723/bonahirepy)
 
 Simple boilerplate for a Flask backend and React client including:
 
