@@ -5,6 +5,8 @@ from sqlalch import db
 from models import User
 from users import users
 from posts import posts
+from jobs import JobMem, JobList
+from flask_restful import Api
 
 '''Main wrapper for app creation'''
 app = Flask(__name__, static_folder='../build')
@@ -13,6 +15,10 @@ CORS(app)
 db.init_app(app)
 app.register_blueprint(users, url_prefix='/users')
 app.register_blueprint(posts, url_prefix='/posts')
+
+api = Api(app)
+api.add_resource(JobList, '/jobs')
+api.add_resource(JobMem, '/jobs/<job_id>')
 ##
 # API routes
 ##
