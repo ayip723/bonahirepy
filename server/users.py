@@ -2,7 +2,8 @@ from flask import Blueprint
 from models import User
 from sqlalch import db
 
-users = Blueprint('user', __name__)
+users = Blueprint('users', __name__)
+
 @users.route('/')
 def hello_user():
   # return 'hello'
