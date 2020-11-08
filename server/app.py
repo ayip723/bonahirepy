@@ -1,12 +1,11 @@
 '''server/app.py - main api app declaration'''
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
+from flask_restful import Api
 from sqlalch import db
-from models import User
 from users import users
 from posts import posts
 from jobs import JobMem, JobList
-from flask_restful import Api
 
 '''Main wrapper for app creation'''
 app = Flask(__name__, static_folder='../build')
