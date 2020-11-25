@@ -67,6 +67,27 @@ const common = {
         ],
       },
       {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: [
+            {
+                loader: 'style-loader',
+            },
+            {
+                loader: 'css-loader',
+                options: {
+                    sourceMap: true,
+                },
+            },
+            {
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true,
+                },
+            },
+        ],
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         exclude: /(node_modules)/,
         use: [
