@@ -8,6 +8,7 @@ export default class AppWrapper extends React.Component {
         <Link to={'/'}>Home</Link>
         <Link to={'/about'}>About</Link>
         <Link to={'/about/subroute'}>Subcomponent</Link>
+        <Link to={'/openings'}>Openings</Link>
         {this.props.children}
       </div>
     )
