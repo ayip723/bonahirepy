@@ -49,7 +49,7 @@ npm run jest
 To run the Python tests (located in `server/tests/`), run:
 
 ```bash
-pytest
+pytest --ignore=node_modules
 ```
 
 ## Linting

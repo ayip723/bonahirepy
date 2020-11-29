@@ -19,7 +19,7 @@
     "lint-py": "pylint server/app.py",
     "lint": "npm run lint-js && npm run lint-py",
     "jest": "jest",
-    "test": "npm run build && npm run lint && npm run jest && pytest"
+    "test": "npm run build && npm run lint && npm run jest && pytest --ignore=node_modules"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
