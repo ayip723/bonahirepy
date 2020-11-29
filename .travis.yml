@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - nvm install 9.2.0
+  - nvm install 14.15.1
   - npm install --no-optional
 
 script:
